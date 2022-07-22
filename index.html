@@ -1,23 +1,149 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>HTML Redirect</title>
-<meta http-equiv="refresh"
-		content="5; url = https://rmiteduau.sharepoint.com/sites/Group9_COSC2083" />
+<title>COSC2767 System Deployment and Operations
+Assignment 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 </head>
-
 <body>
-<h1 style="text-align:center;color:green;">
-	Group 9 - Last Minute
-</h1>
 
-<p style="text-align:center;">
-	If your browser supports Refresh,
-	you'll be redirected to Group 9 website
-	Homepage, in 5 seconds.
-</p>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Primary Information</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Secondary Information</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">About Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:20px">COSC2767 System Deployment and Operations
+<br>Assignment 1</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Primary Information </span></h5>
+    <p>Name: Nwar Alain Bin Hazmi</p>
+    <p>Student ID: S3915079</p>
+    <p>Program: Bachelor in Information Technology</p>
+    <p>Programming Skills: Limited to PowerShell and Python</p>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Secondary Information</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Professional Background</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Personal Background</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Cloud Engineer</h5>
+      <p class="w3-text-grey">Microsoft Azure, 365 Suite and Amazon Web Service Operations supporting Singapore
+Government Agencies</p><br>
+    
+      <h5>System Administrator</h5>
+      <p class="w3-text-grey">Provide IT Consultation (O365 Applications) to end users</p><br>
+    
+      <h5>FastTrack Engineer</h5>
+      <p class="w3-text-grey">Help customers with the onboarding and adoption process with O365</p><br>
+    
+      <h5>ICT Executive</h5>
+      <p class="w3-text-grey">Support HOD in planning and upgrading IT Products to help both students and staffs</p><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Competitive Gamer</h5>
+      <p class="w3-text-grey">2020 - PVP Esports Season 2 Valorant Open Qualifiers - Top 3
+      </p>
+      <p class="w3-text-grey">2015 - Razer Battlefield 4 5V5 DOMINATION players exchange event - Champion
+      </p>
+      <p class="w3-text-grey">2015 - T.D.e.S Battlefield 4 5v5 Sightings Championships - Champion & MVP
+      </p>
+      <p class="w3-text-grey">2015 - [ASIA] RAZER ARENA BF4 KICKOFF TOURNAMENT 5v5 DOMINATION - Top 8
+      </p>
+      <p class="w3-text-grey">2015 - Battlefield 4 Community Tournament - 3rd Placing
+      </p>
+      <br>
+      
+      <h5>National Athelete - Boxer</h5>
+      <p class="w3-text-grey">2015 - Competed in the National Trials Under 55kg - Quaterfinalist </p>
+       <p class="w3-text-grey">2014 - Competed in the Singapore Amateur Boxing Association (SABA) Under 55kg - Gold Medalist</p>
+      <br>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">About Me</span></h5>
+    <p>I love cafe hopping. Y’know, like bar hopping but before 8am, and way more fun with no hangover included. But seriously, cafe hopping is one of my favorite day dates to have with my girlfriend. It kind of follows along with my previous post about living in a tourist mindset. Think about if you were in Italy. What would you want to do first thing in the morning — other than sleep off the jet lag–? Go find the cutest cafe, sample the gorgeous coffees and pastries, right? Or is that just me? I am totally a morning person, well sort of, but that’s another topic. It’s my favorite way to start a day with something new, different and refreshing</p>
+  </div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
-
 </html>
